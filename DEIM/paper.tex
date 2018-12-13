@@ -7,6 +7,8 @@
 \usepackage{amsmath}
 \usepackage{bm}
 \usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{pxjahyper}
 
 % 印刷位置調整 %
 % 必要に応じて値を変更してください．
@@ -21,7 +23,7 @@
 
 \papernumber{DEIM Forum 2019 XX-Y}
 
-\jtitle{DEIM Forum 2019 Class File}
+\jtitle{論文のタイトル}
 \authorlist{%
  \authorentry[hanako@design.inf.shizuoka.ac.jp]{静岡 花子}{Hanako Shizuoka}{ShizuokaUniv}%
  \authorentry[yamamoto@design.inf.shizuoka.ac.jp]{山本 祐輔}{Yusuke Yamamoto}{ShizuokaUniv}%
@@ -54,6 +56,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \maketitle
 
+% 0章：LateXの使い方
+\input{../contents/text/latex}
+
 % 1章：はじめに
 \input{../contents/text/introduction}
 
@@ -75,6 +80,10 @@
 % 7章：おわりに
 \input{../contents/text/conclusion}
 
+
+\vspace{2em}
+% 謝辞
+\input{deim-acknowledgment}
 
 
 %\vspace{30mm} <- 文献が本文と近すぎるときは適宜利用してください．
