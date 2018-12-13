@@ -28,7 +28,7 @@ DEIM2019予稿集用論文のテンプレート（.docx）は[こちら](http://
 2. Thesisディレクトリのpaper.texの35行目にあるtitle{論文タイトル}を修正し，論文のタイトルを設定してください。
 3. 同じくpaper.texの39行目の所属プログラム名，40行目の学籍番号，42行目の氏名を適宜修正してください。
 4. 同じくpaper.texの27行目の副査について，担当副査の教員名を入力してください。
-5. 必要に応じてcontents/textディレクトリにあるdeim-acknowledgment.texを修正し，謝辞を記してください。
+5. 必要に応じてcontents/textディレクトリにあるthesis-acknowledgment.texを修正し，謝辞を記してください。
 6. Thesisディレクトリに移動して，paper.texファイルをコンパイルしてください。同じディレクトリにPDFファイルが作成されます。
 
 
