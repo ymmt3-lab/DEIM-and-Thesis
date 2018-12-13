@@ -35,4 +35,6 @@ DEIM2019予稿集用論文のテンプレート（.docx）は[こちら](http://
 ## 論文の書き方
 [学術分野における作文方法について](https://github.com/ymmt3-lab/lab-management/blob/master/how-to-write-a-paper.md)，解説記事を用意しています。これを読んでください。
 
-## LaTeX環境について
+
+## LaTeXの使い方について
+Thesisディレクトリのpaper.pdfをご覧ください。
