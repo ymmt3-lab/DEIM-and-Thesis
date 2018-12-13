@@ -1,0 +1,91 @@
+\documentclass[autodetect-engine,dvipdfmx,platex]{deimj}
+\usepackage{latexsym}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{multirow}
+
+% 印刷位置調整 %
+% 必要に応じて値を変更してください．
+\hoffset -10mm % <-- 左に 10mm 移動
+\voffset -10mm % <-- 上に 10mm 移動
+
+\newcommand{\AmSLaTeX}{%
+ $\mathcal A$\lower.4ex\hbox{$\!\mathcal M\!$}$\mathcal S$-\LaTeX}
+\newcommand{\PS}{{\scshape Post\-Script}}
+\def\BibTeX{{\rmfamily B\kern-.05em{\scshape i\kern-.025em b}\kern-.08em
+ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125em X}}
+
+\papernumber{DEIM Forum 2019 XX-Y}
+
+\jtitle{DEIM Forum 2019 Class File}
+\authorlist{%
+ \authorentry[hanako@design.inf.shizuoka.ac.jp]{静岡 花子}{Hanako Shizuoka}{ShizuokaUniv}%
+ \authorentry[yamamoto@design.inf.shizuoka.ac.jp]{山本 祐輔}{Yusuke Yamamoto}{ShizuokaUniv}%
+}
+\affiliate[ShizuokaUniv]{静岡大学情報学部\hskip1zw
+  〒432--8011 静岡県浜松市中区城北3-5-1}
+ {Faculty of Informatics, Shizuoka University\\
+  3--5--1, Johoku, Naka-ku, Hamamatsu, Shizuoka,432--8011, Japan}
+
+\begin{document}
+\pagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% アブストラクト（300字程度）
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{jabstract}
+\input{../contents/text/abstract}
+\end{jabstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% キーワード
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{jkeyword}
+\input{../contents/text/keyword}
+\end{jkeyword}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 本文
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\maketitle
+
+% 1章：はじめに
+\input{../contents/text/introduction}
+
+% 2章：関連研究
+\input{../contents/text/related-works}
+
+% 3章：提案事項
+\input{../contents/text/approach}
+
+% 4章：評価実験
+\input{../contents/text/experiment}
+
+% 5章：結果
+\input{../contents/text/results}
+
+% 6章：考察
+\input{../contents/text/discussion}
+
+% 7章：おわりに
+\input{../contents/text/conclusion}
+
+
+
+%\vspace{30mm} <- 文献が本文と近すぎるときは適宜利用してください．
+\vspace{2em}
+
+\begin{thebibliography}{99}
+\bibitem{Codd1970}
+  E. F. Codd,
+  ``A Relational Model of Data for Large Shared Data Banks,''
+  Communications of the {ACM} (CACM), Vol. 13, No. 6, pp. 377--387, 1970.
+\end{thebibliography}
+
+
+\end{document}

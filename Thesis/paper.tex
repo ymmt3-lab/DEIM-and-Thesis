@@ -1,0 +1,70 @@
+\documentclass[a4paper,10pt,oneside,openany,autodetect-engine,dvipdfmx,platex]{jsreport}
+\usepackage{latexsym}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{multirow}
+
+\newcommand{\ChangeHeaderRule}{%
+     \let\section\chapter
+     \let\subsection\section
+}
+
+\begin{document}
+\ChangeHeaderRule
+% 表紙
+\title{平成30年度 静岡大学情報学部行動情報学科 卒業論文\\ \ \\
+●●に関する研究}
+\author{静岡 花子}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% アブストラクト（300字程度）
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+\input{../contents/text/abstract}
+\end{abstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 本文
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\maketitle
+
+% 1章：はじめに
+\input{../contents/text/introduction}
+
+% 2章：関連研究
+\input{../contents/text/related-works}
+
+% 3章：提案事項
+\input{../contents/text/approach}
+
+% 4章：評価実験
+\input{../contents/text/experiment}
+
+% 5章：結果
+\input{../contents/text/results}
+
+% 6章：考察
+\input{../contents/text/discussion}
+
+% 7章：おわりに
+\input{../contents/text/conclusion}
+
+
+
+%\vspace{30mm} <- 文献が本文と近すぎるときは適宜利用してください．
+\vspace{2em}
+
+\begin{thebibliography}{99}
+\bibitem{Codd1970}
+  E. F. Codd,
+  ``A Relational Model of Data for Large Shared Data Banks,''
+  Communications of the {ACM} (CACM), Vol. 13, No. 6, pp. 377--387, 1970.
+\end{thebibliography}
+
+
+\end{document}
